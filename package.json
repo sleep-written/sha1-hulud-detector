@@ -1,0 +1,12 @@
+{
+  "type": "module",
+  "scripts": {
+    "test": "node --test \"./src/**/*.test.{ts,js}\""
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1"
+  },
+  "imports": {
+    "#lib/*": "./src/lib/*"
+  }
+}
