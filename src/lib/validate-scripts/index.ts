@@ -1,0 +1,1 @@
+export { validateScripts } from './validate-scripts.ts';

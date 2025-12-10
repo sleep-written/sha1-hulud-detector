@@ -1,4 +1,4 @@
-export interface PackageJSON {
+export interface NodePackageJSON {
     name?: string;
     type?: string;
     script?: Record<string, string>;

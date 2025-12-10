@@ -1,6 +1,6 @@
-import type { PackageJSON } from './package-json.ts';
+import type { NodePackageJSON } from './node-package-json.ts';
 
 export interface NodePackage {
     path: string;
-    json: PackageJSON;
+    json: NodePackageJSON;
 }

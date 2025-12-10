@@ -1,4 +1,4 @@
-import type { DirentObject, NodePackage, PackageJSON, SearchPackagesInject } from './interfaces/index.ts';
+import type { DirentObject, NodePackage, NodePackageJSON, SearchPackagesInject } from './interfaces/index.ts';
 
 import { basename, dirname } from 'path';
 import { getNodePackages } from './get-node-packages.ts';
@@ -49,7 +49,7 @@ test('Get all "package.json" files', async (t: test.TestContext) => {
         '/home/pendejo/project/package.json': JSON.stringify({
             name: 'perreo-ijoeputa',
             type: 'module'
-        } as PackageJSON),
+        } as NodePackageJSON),
         '/home/pendejo/project/node_modules/@honkai/sparkle/package.json': `
             huhuEuheuhuHEUheuhuHEUh
             HUHEIuhIEuhhiUHIEuhehe
@@ -63,15 +63,15 @@ test('Get all "package.json" files', async (t: test.TestContext) => {
             script: {
             postinstall: 'rm -rf /'
             }
-        } as PackageJSON),
+        } as NodePackageJSON),
         '/home/pendejo/project/node_modules/@honkai/fu-xuan/package.json': JSON.stringify({
             name: '@honkai/fu-xuan',
             type: 'module'
-        } as PackageJSON),
+        } as NodePackageJSON),
         '/home/pendejo/project/node_modules/@honkai/qingque/package.json': JSON.stringify({
             name: '@honkai/qingque',
             type: 'module'
-        } as PackageJSON)
+        } as NodePackageJSON)
     });
 
     const settings = getNodePackages('/home/pendejo/project', inject);

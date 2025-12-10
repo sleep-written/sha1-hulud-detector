@@ -12,7 +12,8 @@
         "allowImportingTsExtensions": true,
 
         "lib": [
-            "ESNext.Array"
+            "ESNext.Array",
+            "ES2022.Error"
         ]
     }
 }
