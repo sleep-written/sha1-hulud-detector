@@ -34,7 +34,7 @@ export async function *getNodePackages(
 
     }
 
-    const dirents = injected.glob('./**/package.json', {
+    const dirents = injected.glob('**/package.json', {
         cwd: entrypoint,
         withFileTypes: true
     });

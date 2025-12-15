@@ -1,12 +1,17 @@
 {
   "type": "module",
   "scripts": {
-    "test": "node --test \"./src/**/*.test.{ts,js}\""
+    "test": "node --test \"./src/**/*.test.{ts,js}\"",
+    "clean": "rm -rf dist",
+    "build": "node --run clean && bleed build --config tsconfig.build.json"
   },
   "devDependencies": {
-    "@types/node": "^24.10.1"
+    "@bleed-believer/cli": "^0.0.4-alpha.0",
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3"
   },
   "imports": {
-    "#lib/*": "./src/lib/*"
+    "#lib/*.ts": "./src/lib/*.ts",
+    "#lib/*.js": "./dist/lib/*.js"
   }
 }

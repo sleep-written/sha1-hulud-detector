@@ -1,5 +1,4 @@
-import type { StyleTextFunction } from '#lib/interfaces/index.ts';
-import type { DirentObject } from './dirent.object.ts';
+import type { StyleFormat, DirentObject } from '#lib/interfaces/index.ts';
 import type { HashObject } from './hash.object.ts';
 
 export interface ValidateHashesInject {
@@ -20,5 +19,8 @@ export interface ValidateHashesInject {
         path: string
     ): Promise<Buffer>;
 
-    styleText?: StyleTextFunction;
+    styleText?(
+        format: StyleFormat[],
+        input: string
+    ): string;
 }

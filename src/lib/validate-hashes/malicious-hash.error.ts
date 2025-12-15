@@ -1,4 +1,4 @@
-import type { StyleTextFunction } from '#lib/interfaces/index.ts';
+import type { StyleFormat } from '#lib/interfaces/index.ts';
 import { styleText } from 'node:util';
 
 export class MaliciousHashError extends Error {
@@ -31,7 +31,10 @@ export class MaliciousHashError extends Error {
         },
         options?: {
             cause?: unknown;
-            styleText?: StyleTextFunction;
+            styleText?: (
+                format: StyleFormat[],
+                input: string
+            ) => string;
         }
     ) {
         const printString = (input: string) => (options?.styleText ?? styleText)(

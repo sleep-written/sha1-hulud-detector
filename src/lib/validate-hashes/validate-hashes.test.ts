@@ -1,5 +1,5 @@
-import type { DirentObject, HashObject, ValidateHashesInject, TargetSettings, NodePackage } from './interfaces/index.ts';
-import type { StyleFormat } from '#lib/interfaces/index.ts';
+import type { HashObject, ValidateHashesInject, TargetSettings, NodePackage } from './interfaces/index.ts';
+import type { DirentObject, StyleFormat } from '#lib/interfaces/index.ts';
 
 import { MaliciousHashError } from './malicious-hash.error.ts';
 import { validateHashes } from './validate-hashes.ts';

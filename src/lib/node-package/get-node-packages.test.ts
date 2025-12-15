@@ -44,7 +44,7 @@ class Inject implements SearchPackagesInject {
     }
 }
 
-test('Get all "package.json" files', async (t: test.TestContext) => {
+test('Get node packages: Get all "package.json" files', async (t: test.TestContext) => {
     const inject = new Inject('/home/pendejo/project', {
         '/home/pendejo/project/package.json': JSON.stringify({
             name: 'perreo-ijoeputa',
@@ -60,7 +60,7 @@ test('Get all "package.json" files', async (t: test.TestContext) => {
         '/home/pendejo/project/node_modules/@honkai/silver-wolf/package.json': JSON.stringify({
             name: '@honkai/silver-wolf',
             type: 'module',
-            script: {
+            scripts: {
             postinstall: 'rm -rf /'
             }
         } as NodePackageJSON),
@@ -94,7 +94,7 @@ test('Get all "package.json" files', async (t: test.TestContext) => {
             json: {
                 name: '@honkai/silver-wolf',
                 type: 'module',
-                script: {
+                scripts: {
                     postinstall: 'rm -rf /'
                 }
             }

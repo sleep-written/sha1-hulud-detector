@@ -1,0 +1,31 @@
+{
+    "scripts": {
+        "build": [ "(bun|environment)\\.(m|c)?(t|j)sx?" ]
+    },
+    "hashes": [
+        {
+            "algorithm": "sha1",
+            "hash": "3d7570d14d34b0ba137d502f042b27b0f37a59fa"
+        },
+        {
+            "algorithm": "sha1",
+            "hash": "d60ec97eea19fffb4809bc35b91033b52490ca11"
+        },
+        {
+            "algorithm": "sha1",
+            "hash": "8de87cf4fbdd1b490991a1ceb9c1198013d268c2"
+        },
+        {
+            "algorithm": "sha1",
+            "hash": "f37c6179739cf47e60280dd78cb1a86fd86a2dcf"
+        },
+        {
+            "algorithm": "sha1",
+            "hash": "91429fbfef99fa52b6386d666e859707a07844b2"
+        },
+        {
+            "algorithm": "sha1",
+            "hash": "ba08d2fcc6cd1c16e4022c5b7af092a4034ceedc"
+        }
+    ]
+}

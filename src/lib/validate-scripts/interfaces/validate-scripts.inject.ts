@@ -1,5 +1,8 @@
-import type { StyleTextFunction } from '#lib/interfaces/index.ts';
+import type { StyleFormat } from '#lib/interfaces/index.ts';
 
 export interface ValidateScriptsInject {
-    styleText?: StyleTextFunction;
+    styleText?(
+        format: StyleFormat[],
+        input: string
+    ): string;
 }

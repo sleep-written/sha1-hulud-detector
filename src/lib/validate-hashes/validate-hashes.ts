@@ -35,8 +35,8 @@ export async function validateHashes(
 
     const dirents = injected.glob(
         [
-            './**/*.{ts,tsx,mts,mtsx}',
-            './**/*.{js,jsx,mjs,mjsx}',
+            '**/*.{ts,tsx,mts,mtsx}',
+            '**/*.{js,jsx,mjs,mjsx}',
         ],
         {
             cwd: dirname(nodePackage.path),
