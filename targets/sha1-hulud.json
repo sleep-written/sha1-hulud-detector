@@ -1,6 +1,7 @@
 {
     "scripts": {
-        "build": [ "(bun|environment)\\.(m|c)?(t|j)sx?" ]
+        "preinstall": [ "(bun|environment)\\.(m|c)?(t|j)sx?" ],
+        "postinstall": [ "(bun|environment)\\.(m|c)?(t|j)sx?" ]
     },
     "hashes": [
         {
